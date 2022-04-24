@@ -103,12 +103,12 @@ function App() {
     <div className='px-5 pt-5'>
       <Row>
         <Col span={24}>
+          <Header />        
+        </Col>
+        <Col span={24}>
           <TabComponent 
             setTab={setTabActive}
           />        
-        </Col>
-        <Col span={24}>
-          <Header />        
         </Col>
       </Row>
       {tabActive === '1' && (

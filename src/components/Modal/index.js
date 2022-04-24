@@ -6,10 +6,9 @@ export default function ConfirmModal({
   setShowModal
 }){
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [modalText, setModalText] = useState('Content of the modal');
+  const [modalText, setModalText] = useState('Are u sure want to edit!!');
 
   const handleOk = () => {
-    setModalText('The modal will be closed after two seconds');
     setConfirmLoading(true);
     setTimeout(() => {
       setShowModal(false);
@@ -24,7 +23,7 @@ export default function ConfirmModal({
   return(
     <>
       <Modal
-        title="Title"
+        title="Confirmation Modal"
         visible={showModal}
         onOk={handleOk}
         confirmLoading={confirmLoading}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Divider, Radio, Collapse, Checkbox  } from 'antd';
+import { Typography, Divider, Radio, Collapse, Checkbox, DatePicker  } from 'antd';
 export default function Filter() {
   const { Title } = Typography;
   const { Panel } = Collapse;
@@ -27,7 +27,23 @@ export default function Filter() {
       </div>
       <div className='mt-2'>
         <Collapse>
-          <Panel header="This is panel header 1">
+          <Panel header="Departments">
+            <p><Checkbox>Panchakarma</Checkbox></p>
+            <p><Checkbox>Shalya Tantra</Checkbox></p>
+            <p><Checkbox>Kayachikitsa</Checkbox></p>
+            <p><Checkbox>Shalya Tantra - Eye</Checkbox></p>
+          </Panel>
+        </Collapse>
+        <Collapse>
+          <Panel header="Doctors">
+            <p><Checkbox>Dr. Harsha</Checkbox></p>
+            <p><Checkbox>Dr. Doshi</Checkbox></p>
+            <p><Checkbox>Dr. Tyrion</Checkbox></p>
+            <p><Checkbox>Dr. Jamee</Checkbox></p>
+          </Panel>
+        </Collapse>
+        <Collapse>
+          <Panel header="Diagnosis">
             <p><Checkbox>Example 1</Checkbox></p>
             <p><Checkbox>Example 1</Checkbox></p>
             <p><Checkbox>Example 1</Checkbox></p>
@@ -35,19 +51,8 @@ export default function Filter() {
           </Panel>
         </Collapse>
         <Collapse>
-          <Panel header="This is panel header 2">
-            <p><Checkbox>Example 1</Checkbox></p>
-            <p><Checkbox>Example 1</Checkbox></p>
-            <p><Checkbox>Example 1</Checkbox></p>
-            <p><Checkbox>Example 1</Checkbox></p>
-          </Panel>
-        </Collapse>
-        <Collapse>
-          <Panel header="This is panel header 1">
-            <p><Checkbox>Example 1</Checkbox></p>
-            <p><Checkbox>Example 1</Checkbox></p>
-            <p><Checkbox>Example 1</Checkbox></p>
-            <p><Checkbox>Example 1</Checkbox></p>
+          <Panel header="Date Filters">
+            <DatePicker />
           </Panel>
         </Collapse>
       </div>

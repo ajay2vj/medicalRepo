@@ -1,0 +1,8 @@
+img.image-place {
+  width: 108px;
+  height: 84px;
+}
+.second-logo {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -16,3 +16,23 @@ td.ant-table-cell:nth-child(7) {
   padding: 0px 50px 0px 50px !important;
   height: 45px !important;
 }
+.ant-modal-content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: none !important;
+  pointer-events: auto;
+}
+.ant-modal-mask {
+  opacity: 0.1;
+  background-color: #dbdada !important;
+}
+.ant-table-thead>tr>th {
+  background: #ab2415 !important;
+  color: #FFF !important;
+}
+.ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan]):before {
+  background-color: #FFF !important;
+}
