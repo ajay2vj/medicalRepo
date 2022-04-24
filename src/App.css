@@ -1,0 +1,18 @@
+td.ant-table-cell:nth-child(7) {
+  display: flex;
+  top: 10px;
+}
+.code-box-demo {
+  overflow-x: auto;
+}
+
+.code-box-demo .ant-segmented {
+  margin-bottom: 10px;
+}
+.ant-collapse{
+  background-color: transparent !important;
+}
+.ant-tabs-tab {
+  padding: 0px 50px 0px 50px !important;
+  height: 45px !important;
+}
