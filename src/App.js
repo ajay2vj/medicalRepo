@@ -8,11 +8,6 @@ import Header from './components/Header';
 import ConfirmModal from './components/Modal'
 import TabComponent from './components/Tabs';
 function App() {
-  const [modal, setModal] = useState(false)
-  const [tabActive, setTabActive] = useState('1');
-  const clickModal = ()=>{
-    setModal(true)
-  }
   const columns = [
     {
       title: 'Presc',
@@ -99,6 +94,12 @@ function App() {
       )
     },
   ];
+  const [modal, setModal] = useState(false)
+  const [tabActive, setTabActive] = useState('1');
+  const [searchData, setSearchData] = useState(data);
+  const clickModal = ()=>{
+    setModal(true)
+  }
   return (
     <div className='px-5 pt-5'>
       <Row>
@@ -114,12 +115,15 @@ function App() {
       {tabActive === '1' && (
         <Row>
           <Col span={4}>
-            <Filter />
+            <Filter 
+              data={data}
+              setSearchData={setSearchData}
+            />
           </Col>
           <Col span={20}>
             <Table
               columns={columns}
-              dataSource={data}
+              dataSource={searchData}
             />
           </Col>
         </Row>
