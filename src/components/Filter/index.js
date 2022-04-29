@@ -22,7 +22,7 @@ export default function Filter({
       });
       setSearchData(result);
     }
-  },[data, search])
+  },[data, search, setSearchData])
   return(
     <div className='border'>
       <Title 

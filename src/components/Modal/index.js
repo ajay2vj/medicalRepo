@@ -6,7 +6,7 @@ export default function ConfirmModal({
   setShowModal
 }){
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [modalText, setModalText] = useState('Are u sure want to edit!!');
+  const [modalText, ] = useState('Are u sure want to edit!!');
 
   const handleOk = () => {
     setConfirmLoading(true);
